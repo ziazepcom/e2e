@@ -20,7 +20,7 @@ const fl = [mf1,mf2,mf3,mf4,mf5,mf6]
 const fu = ['https://the-internet.herokuapp.com/upload','#file-upload']
 const fv = ['#file-submit','File Uploaded']
 
-it('File Upload using Custom Command', () => {                      
+xit('File Upload using Custom Command', () => {                      
     cy.CFileUpload(fu,fl,fv);
     cy.find
 })
@@ -56,7 +56,7 @@ xit('the-internet.herokuapp.com/upload', () => {                 //uploading a s
     cy.get('#uploaded-files').contains('File.txt')  
 });
 
-xit('automationpractice.com/upload', () => {                     //uploading a single file using cypress-file-upload plugin
+it('automationpractice.com/upload', () => {                     //uploading a single file using cypress-file-upload plugin
     cy.visit('http://automationpractice.com/index.php?controller=contact')
     cy.get('#fileUpload').attachFile('GFile1.png')    
 });
