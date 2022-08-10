@@ -2,6 +2,7 @@ const { defineConfig } = require("cypress");
 const { downloadFile } = require("cypress-downloadfile/lib/addPlugin");
 ///<reference types="cypress-xpath"/>;
 ///<reference types="cypress-downloadfile"/>;
+///<reference types='cypress-plugin-tab"/>;
 
 
 module.exports = defineConfig({
