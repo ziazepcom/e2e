@@ -5,7 +5,7 @@ const { downloadFile } = require("cypress-downloadfile/lib/addPlugin");
 
 
 module.exports = defineConfig({
-  reporter: "cypress-mochawesome-reporter",
+   reporter: "cypress-mochawesome-reporter",
 
   reporterOptions: {
     reportDir: "cypress/report",
@@ -33,7 +33,7 @@ module.exports = defineConfig({
     }
   },
   e2e: {
-    port:9999,
+    port:8888,
     watchForFileChanges: false,
     //experimentalSessionAndOrigin: true,
     setupNodeEvents(on, config) {
